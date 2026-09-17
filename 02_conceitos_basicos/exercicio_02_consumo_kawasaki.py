@@ -12,3 +12,9 @@ Calcule e imprima o consumo médio da motocicleta (Km/L) formatado com 2 casas d
 """
 
 # TODO: Desenvolva o algoritmo abaixo:
+
+distanciaTotal = float (input("Qual a distância percorrida(Km)?"))
+combustivelGasto = float (input("Quantos litros foram gastos(Litros?"))
+consumoMedio = float (distanciaTotal/combustivelGasto)
+print (f"O Consumo Médio gasto pela motocicleta é:{consumoMedio:.2f} Km/L")
+
