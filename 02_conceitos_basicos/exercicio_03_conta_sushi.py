@@ -10,3 +10,9 @@ Crie um programa que:
 """
 
 # TODO: Desenvolva o algoritmo abaixo:
+
+valorTotal = float (input("Digite o valor total consumido (em R$):"))
+taxadoGarcom = float (valorTotal*0.10)
+valorFinal = (valorTotal+taxadoGarcom)
+print(f"O valor total da compra é {valorFinal}")
+
