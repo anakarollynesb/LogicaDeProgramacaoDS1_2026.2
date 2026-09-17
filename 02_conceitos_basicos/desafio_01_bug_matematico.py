@@ -21,5 +21,10 @@ SUA MISSÃO:
 
 # TODO: Escreva aqui o código corrigido:
 
-nota1 = float (input("digite a nota"))
-nota2 = float (input ("digite a nota"))
+from statistics import median
+
+
+nota1 = float (input("digite a primeira nota"))
+nota2 = float (input ("digite a segunda nota"))
+media = float ((nota1+nota2)/2)
+print (f"A nota semetral do aluno é:{media}")
