@@ -14,3 +14,32 @@ Imprima: novo salário, valor do reajuste ganho e percentual aplicado.
 """
 
 # TODO: Desenvolva o algoritmo abaixo:
+
+salario = float(input("Digite seu salário abaixo:"))
+if salario<=400.00:
+    reajuste = (salario*0.15)
+    novoSalario = salario + reajuste
+    print(f"Seu novo salário é {novoSalario}! Houve um reajuste de {reajuste} = 15%")
+elif salario<=800:
+    reajuste = salario*0.12
+    novoSalario = salario + reajuste
+    print(f"Seu novo salário é {novoSalario}! Houve um reajuste de {reajuste} = 12%")
+elif salario<=1200:
+    reajuste = salario*0.10
+    novoSalario = salario + reajuste
+    print(f"Seu novo salário é {novoSalario}! Houve um reajuste de {reajuste} = 10%")
+elif salario<=2000:
+    reajuste = salario*0.07
+    novoSalario = salario + reajuste
+    print(f"Seu novo salário é {novoSalario}! Houve um reajuste de {reajuste} = 7%")
+else:
+    reajuste = salario*0.04
+    novoSalario = salario + reajuste
+    print(f"Seu novo salário é {novoSalario}! Houve um reajuste de {reajuste} = 4%")
+
+    #salario>2000
+    #reajuste = salario*0.04
+    #novoSalario = salario + reajuste
+    #print(f"Seu novo salário é {novoSalario}! Houve um reajuste de {reajuste} = 4%")
+
+
