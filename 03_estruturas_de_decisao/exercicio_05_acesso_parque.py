@@ -12,7 +12,7 @@ Imprima o tipo de bilhete e o valor final a pagar.
 """
 
 # TODO: Desenvolva o algoritmo abaixo:
-print ("Acesso da bilheteria-Valor do ingresso sem desconto: R$100,00")
+print ("Acesso ao Parque-Valor do ingresso sem desconto: R$100,00")
 idade = float(input("Digite a sua idade:"))
 if idade<12:
     print ("Infantil-(50% de desconto -> R$ 50,00)")

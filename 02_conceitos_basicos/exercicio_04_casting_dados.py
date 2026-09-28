@@ -14,7 +14,8 @@ Imprima a idade calculada com uma mensagem personalizada.
 from typing import Literal
 
 
-anodeNascimento = int (input("Qual ano você nasceu?"))
-Literal2026 = (2026)
-idadeEm2026 = int (Literal2026-anodeNascimento)
+anodeNascimento = str (input("Qual ano você nasceu?"))
+anodeNascimento_int = int(anodeNascimento)
+literal2026 = int(2026)
+idadeEm2026 = int (literal2026-anodeNascimento_int)
 print(f"Até 2026 você fará {idadeEm2026}")

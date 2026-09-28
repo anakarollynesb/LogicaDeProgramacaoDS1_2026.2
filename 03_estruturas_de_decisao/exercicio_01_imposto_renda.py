@@ -15,11 +15,14 @@ Imprima "Isento" ou o valor total do imposto formatado com 2 casas decimais.
 # TODO: Desenvolva o algoritmo abaixo:
 
 salario = float (input("Digite seu salário(R$):"))
-if salario<2000.00:
+if salario>=0 and salario<=2000.00:
     print ("Isento")  
-elif salario<=3000.00:
+elif salario>2000.01 and salario<=3000.00:
     imr = float (salario-2000.00)*0.08
-    print (f"Seu Imposto de Renda é {imr}")
-elif salario<=4500.00:
-    imr = float (salario-3000.00)*0.18+(999.99*0.08)
     print (f"Seu Imposto de Renda é {imr:.2f}")
+elif salario>=3000.01 and salario<=4500.00:
+    imr = float ((salario-3000.00)*0.18)+80
+    print (f"Seu Imposto de Renda é {imr:.2f}")
+else:
+    imr=((salario-4500)*0.28)+350
+    print(f"Seu Imposto de Renda é {imr:.2f}")
