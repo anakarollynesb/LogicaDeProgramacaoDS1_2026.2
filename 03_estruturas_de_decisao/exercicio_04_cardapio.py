@@ -38,3 +38,6 @@ elif codigo==4:
 elif codigo==5:
     totalPagar = (quantidadeConsumida*1.50)
     print(f"O total a ser pago é {totalPagar}")
+else:
+    print(f"Código Inválido!")
+    exit()

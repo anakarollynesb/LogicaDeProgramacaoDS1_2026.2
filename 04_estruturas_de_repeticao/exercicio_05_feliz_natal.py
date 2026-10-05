@@ -9,3 +9,7 @@ da palavra natal exatamente I vezes (ex: I=5 -> "Feliz nataaaal!").
 """
 
 # TODO: Desenvolva o algoritmo abaixo:
+
+nivel = int (input("Qual seu nível de empolgação pra este Natal?"))
+calculo = nivel * "a"
+print (f"Feliz Nat{calculo}l!")
