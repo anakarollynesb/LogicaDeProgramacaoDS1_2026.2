@@ -11,4 +11,18 @@ SUA MISSÃO:
 3. Teste suas funções refatoradas.
 """
 
-# TODO: Desenvolva as funções modulares abaixo:
+# TODO: Desenvolva as funções modulares abaixo: 
+preco = float(input("Qual seu preço base?"))
+taxa = float(input("Qual sua taxa de desconto?(%)"))
+taxa2 = float(input("Qual sua taxa de imposto?(%)"))
+def calcular_preco_final(preco_base, taxa_desc, taxa_imp):
+    desconto = preco_base * (taxa_desc / 100)
+    preco_com_desconto = preco_base - desconto
+    imposto = preco_com_desconto * (taxa_imp / 100)
+    preco_final = preco_com_desconto + imposto
+    return preco_final
+def exibir_relatorio_item(numero_item, preco_final):
+    print ("Relatório final:" , numero_item, f"R${preco_final:.2f}")
+
+precoFinal = calcular_preco_final(preco, taxa, taxa2)
+exibir_relatorio_item(1, precoFinal)
